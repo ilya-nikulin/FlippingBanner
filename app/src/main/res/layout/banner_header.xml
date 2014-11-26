@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="#fff5f5f5">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="93dp"
+        android:background="#ff68b8ff">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/bannerPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/banner_footer_spacer"></FrameLayout>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/bannerIndicator"
+                android:padding="10dip"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/banner_footer_1" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/banner_footer_spacer"></FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
